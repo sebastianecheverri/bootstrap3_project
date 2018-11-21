@@ -1,9 +1,3 @@
-@media screen (max-width: 991px) and (min-width: 768px) {}
-    #list {
-        display: none;
-    }
-}
-
 div.card{
     width: 260px;
     height: 450px;
@@ -21,3 +15,9 @@ div.card{
 .text_area{
     min-width: 100%;
   }
+
+@media screen (max-width: 991px) and (min-width: 768px) {}
+  #list {
+      display: none;
+  }
+}
