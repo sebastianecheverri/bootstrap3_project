@@ -1,0 +1,23 @@
+@media screen (max-width: 991px) and (min-width: 768px) {}
+    #list {
+        display: none;
+    }
+}
+
+div.card{
+    width: 260px;
+    height: 450px;
+    margin: 10px;
+    padding: 3%;
+    border: solid lightgray;
+    border-width: thin;
+    font-size: 15px;
+  }
+
+.card-img-top{
+    width: 90%;
+  }
+
+.text_area{
+    min-width: 100%;
+  }

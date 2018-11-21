@@ -1,58 +1,236 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>E-commerce</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">E-commerce</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <button type="button" class="btn btn-dark">&#128722; Canasta</button>
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Salir</button>
             </div>
-        
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>Canasta</a></li>
-                <li><a href="#">Salir</a></li>
-            </ul>
-            </div>
-        </div>
     </nav>
+
+
     <div class="container-fluid">
-        <div class="container-fluid">
-            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Buscar camisetas">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search" aria-hidden="true"></i></button>
-                    </span>
-                </div>
-                <div class="list-group">
-                    <h3>Categorías</h3>
-                    <a href="#" class="list-group-item active"><span class="badge">100</span>Todos</a>
-                    <a href="#" class="list-group-item"><span class="badge">4</span>Hombre</a>
-                    <a href="#" class="list-group-item"><span class="badge">12</span>Mujer</a>
-                    <a href="#" class="list-group-item"><span class="badge">24</span>Hipster</a>
-                    <a href="#" class="list-group-item"><span class="badge">6</span>Metal</a>
-                    <a href="#" class="list-group-item"><span class="badge">5</span>Universidad</a>
-                    <a href="#" class="list-group-item"><span class="badge">8</span>Deportiva</a>
-                    <a href="#" class="list-group-item"><span class="badge">11</span>Rayas</a>
-                    <a href="#" class="list-group-item"><span class="badge">19</span>Apretada</a>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <br>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar camisetas">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">&#x1F50D;</button>
+            </span>
+          </div>
+          <br>
+
+          <h2 class="d-none d-lg-block ">Categorías</h2>
+          <div class="list-group d-lg-block" id="list">
+            <a href="#" class="list-group-item list-group-item-action active">Todos<span class="badge badge-secondary badge-pill float-right">100</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Hombre<span class="badge badge-secondary badge-pill float-right">4</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Mujer<span class="badge badge-secondary badge-pill float-right">12</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Hipster<span class="badge badge-secondary badge-pill float-right">24</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Metal<span class="badge badge-secondary badge-pill float-right">6</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Universidad<span class="badge badge-secondary badge-pill float-right">5</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Deportiva<span class="badge badge-secondary badge-pill float-right">8</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Rayas<span class="badge badge-secondary badge-pill float-right">11</span></a>
+            <a href="#" class="list-group-item list-group-item-action">Apretado<span class="badge badge-secondary badge-pill float-right">19</span></a>
+          </div>
         </div>
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-lg-12">
+              <br>
+              <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-1.jpg" alt="acdc">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-2.jpg" alt="nirvana">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg" alt="kiss">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Hipster Ultimate</strong> </h5>
+                  <p class="card-text">La camiseta ideal para hipsters.</p>
+                </div>
+
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">&#128722; $229</a>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                    Detalles
+                  </button>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hipster Ultimate</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="alert alert-info" role="alert">ℹ️ Este producto está agotado</div>
+                        <div class="container-fluid">
+                          <div class="row justify-content-center">
+                            <div class="col">
+                              <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="producto1" style="width: 260px;">
+
+                            </div>
+                            <div class="col">
+                              <div>Precio <strong>$229</strong> </div>
+                              <br>
+                              <div>Calificación &#9733; &#9733; &#9733; &#9733; &#9734; </div>
+                              <br>
+                              <button type="button" class="btn btn-warning">Hipster</button>
+                              <button type="button" class="btn">Deportiva</button>
+                              <br>
+                              <br>
+                              <a href="#">♥ Agrega a los deseos </a>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+
+                        <nav>
+                          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-description" aria-selected="true">Descripción</a>
+                            <a class="nav-item nav-link" id="nav-comments-tab" data-toggle="tab" href="#nav-comments" role="tab" aria-controls="nav-comments" aria-selected="false">Comentarios</a>
+                          </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                          <div class="tab-pane fade" id="nav-comments" role="tabpanel" aria-labelledby="nav-comments-tab">
+                            <table class="table table-striped">
+                              <tr>
+                                <td>Sebastián Echeverri comentó hace 2 días</td>
+                              </tr>
+                              <tr>
+                                <td>Esta camiseta está genial. La quiero</td>
+                              </tr>
+                            </table>
+                            <textarea class="text_area" name="name" rows="2" placeholder="Ingresa un comentario"></textarea>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>On motion Live</strong> </h5>
+                  <p class="card-text">Perfecta para salidas rocosas</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary"> &#128722; $229</a>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#">
+                    Detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Underground Max</strong> </h5>
+                  <p class="card-text">Para lo amantes del underground.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">&#128722; $229</a>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#">
+                    Detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Hipster Ultimate</strong> </h5>
+                  <p class="card-text">La camiseta ideal para hipsters.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">&#128722; $229</a>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#">
+                    Detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Hipster Ultimate</strong> </h5>
+                  <p class="card-text">La camiseta ideal para hipsters.</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary">&#128722; $229</a>
+                  <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#">
+                    Detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
